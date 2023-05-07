@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index-min.js"></script>
+    <style>
+        body{
+            background-color: rgb(188, 237, 197);
+        }
+        
+        .header{
+            margin-top: 60px;
+            text-align: center;
+            position: relative;
+            font-size: 80px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #068dc3;
+            
+        }
+        .grid{
+            
+            margin: 12px;
+            text-align: center;
+            align-self: center;
+        }
+        table{
+            
+            display: inline;
+            font-size: 50px;
+            text-align: center;
+        }
+        td{
+            background-color: rgb(238, 189, 159);
+            width: 50px;
+            height: 50px;
+            position: relative;
+            display: inline block;
+            max-width: 50px;
+            max-height: 50px;
+            padding: 50px;
+            border: 1px sandybrown solid;
+        }
+        td:hover{
+            background-color: aquamarine;
+
+        }
+        .button {
+  background-color: #04775c; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.footer{
+    margin-top: 50px;
+    color: rgb(18, 21, 21);
+    
+}
+
+    </style>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="header">Tic Tac Toe</div>
+    <div class="grid">
+        <div id="result"></div>
+        <table id="t">
+        <tr>
+            <td id="1" onclick="userClick(1)"></td><td id="2" onclick="userClick(2)"></td><td id="3" onclick="userClick(3)"></td>
+        </tr>
+        <tr>
+            <td id="4" onclick="userClick(4)"></td><td id="5" onclick="userClick(5)"></td><td id="6" onclick="userClick(6)"></td>
+        </tr>
+        <tr>
+            <td id="7" onclick="userClick(7)"></td><td id="8" onclick="userClick(8)"></td><td id="9" onclick="userClick(9)"></td>
+        </tr>
+    </table>
+    </div>
+    <div class="footer">-by Ashish Karn</div>
+</body>
+
+</html>
